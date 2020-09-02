@@ -28,6 +28,10 @@ spring:
           uri: http://localhost:8085
           predicates:
             - Path=/bikes/** 
+        - id: giftsend
+          uri: http://localhost:8086
+          predicates:
+            - Path=/giftsends/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -67,6 +71,10 @@ spring:
           uri: http://b-bike:8080
           predicates:
             - Path=/bikes/** 
+        - id: giftsend
+          uri: http://b-giftsend:8080
+          predicates:
+            - Path=/giftsends/** 
       globalcors:
         corsConfigurations:
           '[/**]':
